@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 document.getElementById('solution-circumference').addEventListener('click', circleCalculator)
 
@@ -6,11 +6,11 @@ document.getElementById('solution-area').addEventListener('click', circleCalcula
 
 function circleCalculator () {
   // variable assigned with a diameter value
-  const radius = document.getElementById('diameter').value / 2;
+  const radius = document.getElementById('diameter').value / 2
   // variable assigned with circumference of a circle formula
-  const circumference = 2 * Math.PI * radius;
+  const circumference = 2 * Math.PI * radius
   // variable assigned with area of a circle formula
-  const area = Math.PI * Math.pow(radius, 2);
+  const area = Math.PI * Math.pow(radius, 2)
   // final result for circumference rounded to nearest tenth
   document.getElementById('solution-circumference').innerHTML = 'The circumference of your circle is = ' + circumference.toFixed(1) + ' units '
   // final result for area rounded to nearest tenth
