@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Calculating the circumference and area of a circle." />
+    <meta name="keywords" content="variables, pi" />
+    <meta name="author" content="author" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Circumference and Area of a Circle.</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 style="text-align:center;">Cirumference and Area of a Circle Calculator</h1>
+    <form> 
+      <label for="diameter">Enter your diameter (units):</label>
+      <input type="text" id="diameter" size="5">
+      <br>
+      <br>
+      <button onclick="circleCalculator ()">Calculate</button>
+      <br>
+      <br>
+      <label id="solution-circumference">The circumference of your circle is =</label>
+      <br>
+      <br>
+      <label id="solution-area">The area of your circle is =</label>
+      <br>
+      <br>
+    </form>
+    <br>
+    <img src="./images/Circle.jpg" alt="Circle" height="200px" width="200px">
+    <script src="script.js"></script>
+    <div id="disclaimer">
+      <p>The web page will ask you to give the diameter but the program will use radius in the calculations. So 2 * pi * radius is used to find the circumference instead of just pi * diameter.</p>
+    </div>
+  </body>
+</html>
